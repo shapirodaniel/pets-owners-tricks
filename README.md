@@ -15,7 +15,7 @@ Clone this repo, then issue the following commands to initialize your db instanc
 Once you've successfully connected to your db instance with `psql`, you'll be able to seed your database using the `setup.sql` file enclosed (your prompt and command will look similar to the below example):
 
 `psql (14.1)`  
-`Type "help" for help.`
+`Type "help" for help.`  
 `pets-owners-tricks=# \i ./setup.sql`
 
 Verify your database has been seeded successfully by running the following commands and expecting the following output:
