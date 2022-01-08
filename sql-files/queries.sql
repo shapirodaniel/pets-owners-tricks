@@ -1,4 +1,4 @@
--- grab all pets whose age is >= 3 
+-- grab all pets and filter by age 
 SELECT * FROM pets
 WHERE pets.age < 3;
 
