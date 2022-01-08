@@ -16,7 +16,11 @@ Once you've successfully connected to your db instance with `psql`, you'll be ab
 
 `psql (14.1)`  
 `Type "help" for help.`  
-`pets-owners-tricks=# \i ./setup.sql`
+`pets-owners-tricks=#`
+
+Run the following command from the `pets-owners-tricks=#` prompt to seed your database:
+
+`\i ./setup.sql`
 
 Verify your database has been seeded successfully by running the following commands and expecting the following output:
 
