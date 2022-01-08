@@ -1,4 +1,4 @@
-### PosgreSQL Tutorial
+# PosgreSQL Tutorial
 
 This tutorial will walk you through setting up a postgres db instance, connecting to the db, seeding from a `setup.sql` file, and running predetermined queries against db instance to learn a bit more about SQL syntax
 
