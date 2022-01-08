@@ -30,6 +30,11 @@ Once your database has been succesfully seeded, try running some of the pre-buil
 
 ## Advice
 
-Use the `assets/database-schema` image file to visualize the tables as you work through the SQL queries and draw the connections that statements like `JOIN` make across tables, or the assertion that a through table instance makes by associating its separate IDs.
+Use the `assets/database-schema` image file to visualize the tables as you work through the SQL queries and draw the connections that statements like `JOIN` make across tables, or the assertion that a through table instance makes by associating its separate IDs to a unique record for many:many relationships, as opposed to the 1:many relationship an owner holds with their pets.
 
-For example: the `pet_trick` table associates pets and tricks, and we can read an individual record of `petId=1, trickId=2` as <em>wally knows how to 'stay'</em>!
+Spend a bit of time with these through table relationships and try to "read between the lines" to understand what these associations mean in plain business logic: for example, the `pet_trick` table associates pets and tricks, so we can read an individual record of `petId=1, trickId=2` as <em>wally knows how to 'stay'</em>!
+
+## Relationships
+
+- `1:many`: owners have many pets, each pet belongs to a single owner
+- `many:many`: pets know many tricks, and each trick may belong to all or no pets
