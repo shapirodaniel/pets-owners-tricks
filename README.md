@@ -23,3 +23,9 @@ Verify your database has been seeded successfully by running the following comma
 ![](./assets/verify-successful-db-seeding.png)
 
 Once your database has been succesfully seeded, try running some of the pre-built queries from `queries.sql`, either via `\i queries.sql` or by inputting individual commands into the `psql` prompt directly!
+
+## Advice
+
+Use the `assets/database-schema` image file to visualize the tables as you work through the SQL queries and draw the connections that statements like `JOIN` make across tables, or the assertion that a through table instance makes by associating its separate IDs.
+
+For example: the `pet_trick` table associates pets and tricks, and we can read an individual record of `petId=1, trickId=2` as <em>wally knows how to 'stay'</em>!
