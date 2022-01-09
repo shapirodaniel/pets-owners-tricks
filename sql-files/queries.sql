@@ -18,7 +18,7 @@ JOIN pets ON owners.id=pets."ownerId"
 GROUP BY owners.id, owners.name;
 
 -- advanced!
--- how many pets live in Washington?
+-- how many pets live in each location?
 SELECT owners.location, count(pets.*) AS number_of_pets
 FROM owners
 JOIN pets ON owners.id=pets."ownerId"
